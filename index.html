@@ -1,0 +1,121 @@
+ <!--  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Eligibility</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <script src="loan.js"></script>
+</body>
+</html>   -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="scripts.js"></script>
+  </head>
+  <body>
+    <div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-heading">
+				<h2 class="text-center">Loan APP</h2>
+			</div>
+			<hr />
+			<div class="modal-body">
+				<form action="" role="form">
+					<div class="form-group">
+						<div class="input-group">
+							<span class="input-group-addon">
+							<span class="glyphicon glyphicon-plus"></span>
+							</span>
+							<input type="number" class="form-control" placeholder="Income/Month"  id="amount" required  />
+						</div>
+            
+        
+					</div>
+					<div class="form-group">
+						<div class="input-group">
+							<span class="input-group-addon">
+							<span class="glyphicon glyphicon-time"></span>
+							</span>
+							<input type="number" class="form-control" placeholder="Years on Job" id="years"  required  />
+
+						</div>
+                    </div>
+
+
+
+                    <div class="form-group">
+						<div class="input-group">
+							<span class="input-group-addon">
+							<span class="glyphicon glyphicon-time"></span>
+							</span>
+							<input type="number" class="form-control" placeholder="Loan Amount" id="loan"  required  />
+
+						</div>
+                    </div>
+
+
+
+
+
+
+
+
+<button type="" class="btn btn-primary btn-block"  onclick="eligibility()">Check Eligibility</button>
+  
+					<div id="result" style="margin-top: 30px; margin-bottom: 30px;">
+						
+					</div>
+
+
+
+
+
+                    <div class="form-group">
+                        <div class="input-group">
+                          <span class="input-group-addon">Monthly Payment</span>
+                          <input type="number" class="form-control" id="monthly-payment" disabled>
+                        </div>
+                      </div>
+
+
+
+
+                      <div class="form-group">
+                        <div class="input-group">
+                          <span class="input-group-addon">Total Payment</span>
+                          <input type="number" class="form-control" id="total-payment" disabled>
+                        </div>
+                      </div>
+
+
+
+                      <div class="form-group">
+                        <div class="input-group">
+                          <span class="input-group-addon">Total Interest</span>
+                          <input type="number" class="form-control" id="total-interest" disabled>
+                        </div>
+                      </div>
+
+                      <button type="" class="btn btn-primary btn-block"  onclick="">Apply</button>
+
+
+				</form>
+			</div>
+		</div>
+	</div>
+
+    <script src="loan.js"></script>
+  </body>
+  </html>   
