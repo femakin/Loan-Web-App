@@ -10,7 +10,7 @@ function eligibility(){
     //let  interest;
     //let dura = parseInt(Duration);
     let Message = document.querySelector("#result");
-    if(amt < 50000 && Duration != ""  && Loan !=""){
+    if(amt < 50000 && Duration != ""  && Loan !="" || Loan < 50000){
         Message.textContent = "Please! Your journey ends here as you're not eligible for the loan";
        // console.log('Try again')
     }
